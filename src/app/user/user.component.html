@@ -1,2 +1,58 @@
 <p>user works!</p>
  <p>Az én neven: {{nev}}</p>
+
+ <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">Regisztrációs űrlap</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline form-floating">
+                                        <input type="text" id="nev" name="nev" class="form-control form-control-lg"
+                                            placeholder="Név" />
+                                        <label class="form-label" for="nev">Név</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline form-floating">
+                                        <input type="text" id="kor" name="kor" class="form-control form-control-lg"
+                                            placeholder="Kor" />
+                                        <label class="form-label" for="kor">Kor</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-2 pb-2">
+                                    <div class="form-outline form-floating">
+                                        <input type="text" id="emailCim" name="emailCim"
+                                            class="form-control form-control-lg" placeholder="E-mail cím" />
+                                        <label class="form-label" for="emailCim">E-mail cím</label>
+                                    </div>
+                                    <small class="text-muted">Formátum példa: teszt@teszt.hu</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-2 pb-2">
+                                    <div class="form-outline form-floating">
+                                        <input type="text" id="telefonszam" name="telefonszam"
+                                            class="form-control form-control-lg" placeholder="Telefonszám" />
+                                        <label class="form-label" for="telefonszam">Telefonszám</label>
+                                    </div>
+                                    <small class="text-muted">Formátum példa: +36201234567</small>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-2 text-center">
+                                <input class="btn btn-primary btn-lg w-100" type="button" value="Regisztrálok"
+                                (click)="clickEvent()" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

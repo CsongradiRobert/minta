@@ -1,0 +1,18 @@
+/* Egyedi betűtípus importálása: */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+/* Háttér: */
+.gradient-custom {
+    /* Régi böngészőknek: */
+    background: #880921;
+    /* Chrome 10-25, Safari 5.1-6 böngészőknek: */
+    background: -webkit-linear-gradient(to top right, rgba(60, 23, 66, 1), rgba(196, 32, 33, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ böngészőknek:*/
+    background: linear-gradient(to top right, rgba(60, 23, 66, 1), rgba(196, 32, 33, 1))
+}
+
+/* Egyedi betűtípus felhasználása: */
+span, p
+{
+    font-family: 'Roboto', sans-serif;
+}
